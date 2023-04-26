@@ -1,4 +1,4 @@
-select e.emp_no
+select e.emp_no AS employee_number
 , e.last_name
 , e.first_name
 , e.sex
