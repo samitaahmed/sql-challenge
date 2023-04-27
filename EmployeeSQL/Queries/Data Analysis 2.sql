@@ -36,3 +36,26 @@ LEFT JOIN departments ON dept_emp.dept_no = departments.dept_no
 
 Select first_name, last_name, sex From employees
 Where first_name = 'Hercules' AND last_name like 'B%'
+
+-- Data Analysis 6: 
+
+SELECT departments.dept_name, dept_emp.emp_no, last_name, first_name FROM departments
+LEFT JOIN dept_emp ON departments.dept_no = dept_emp.dept_no
+LEFT JOIN employees ON dept_emp.emp_no = employees. emp_no
+WHERE departments.dept_name = 'Sales'
+
+
+--Data Analysis 7:
+
+SELECT departments.dept_name, dept_emp.emp_no, last_name, first_name FROM departments
+LEFT JOIN dept_emp ON departments.dept_no = dept_emp.dept_no
+LEFT JOIN employees ON dept_emp.emp_no = employees. emp_no
+WHERE departments.dept_name in ('Sales', 'Development')
+
+--Data Analysis 8:
+
+
+
+
+
+
